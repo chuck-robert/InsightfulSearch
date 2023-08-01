@@ -1,4 +1,4 @@
-# InsightfulSearch
+# InsightfulSearch | 聚源千意（星柠起始页2.0）
 聚源千意起始页，星柠起始页2.0的jq重构版本
 
 ## 配置起始页代码
