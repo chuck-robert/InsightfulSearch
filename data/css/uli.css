@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    outline: 0;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+xn-box.main{
+    width: 700px;
+    position: absolute;
+    left: calc(50% - 350px);
+    margin: auto;
+    top: 100px;
+}
+xn-box.main > xn-box{
+    min-height: 200px;
+}
+xn-box.main > xn-box > img{
+    display: none;
+    max-width: 100%;
+}
+span.xn_css.tag {
+    width: calc(100% - 10px);
+    display: inline-block;
+}
+button{
+    margin: 10px 5px;
+}
+@media screen and (max-width:740px) {
+    xn-box.main{
+        width: 100%;
+        margin: 0;
+    }
+}
