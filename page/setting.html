@@ -1,0 +1,145 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="https://stear.cn/data/css/xn-ui.css">
+<div class="header">
+    <!-- onload="loadSettingUIfun()" -->
+    <div style="display: flex;align-items: center;opacity: 0;">
+        <svgCreate-div svgId="3" class="windowsIcon"></svgCreate-div>
+        <h1 class="windowsTitle">设置页面</h1>
+    </div>
+    <div>
+        <svgCreate-div onclick="openUrl('3','fun')" svgId="2"></svgCreate-div>
+        <svgCreate-div onclick="openUrl('2','fun')" svgId="1"></svgCreate-div>
+    </div>
+</div>
+<div class="windows">
+    <div class="settingTypeList tr3s">
+        <ul class="set-tab">
+            <li class="set-active"><i class="fa fa-paint-brush" aria-hidden="true"></i><p>外观设置</p></li>
+            <li class=""><i class="fa fa-search" aria-hidden="true"></i><p>搜索设置</p></li>
+            <li class="" id="collect-menu-open"><i class="fa fa-star" aria-hidden="true"></i><p>收藏设置</p></li>
+            <li class=""><i class="fa fa-sticky-note" aria-hidden="true"></i><p>笔记设置</p></li>
+            <li class=""><i class="fa fa-plus" aria-hidden="true"></i><p>功能组件</p></li>
+            <li class=""><i class="fa fa-user" aria-hidden="true"></i><p>备份还原</p></li>
+            <li class="" onclick="versionS()"><i class="fa fa-info" aria-hidden="true"></i><p>关于星柠</p></li>
+            <li class="" onclick="linksS()"><i class="fa fa-link" aria-hidden="true"></i><p>相关链接</p></li>
+        </ul>
+    </div>
+    <div class="settingMain tr3s">
+        <div class="settingFa" style="display:block">
+            <p class="aboutInfo corrugation">在此页面您可以自定义您的起始页</p>
+            <div class="settingChildKixaChangeList bg">
+                <li class="active">常规</li><li onclick="loading('#bgListPhoto');showBgBox()">图片背景</li><li id="wallhavenInput" onclick="loading('#bgWallHaven');WallHaven()">WallHaven</li><li onclick="loading('#bgListVideo');">视频壁纸</li>
+            </div>
+            <div id="menu_list-1" class="menu_list">
+                <div class="settingMainKixa">
+                    <dl miniHide><dt><p>暗黑模式</p><p>设置主题为暗黑或浅色</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="theme-color" data-Function="onclick='ChangeColor();'"></checkBox></dd></dl>
+                    <dl miniHide><dt><p>磨砂玻璃主题</p><p></p></dt><dd><checkBox data-autoCrate="true" data-setting-id="TM_glass" data-Function="onclick='saveSetting();TM(attr_data(1));'"></checkBox></dd></dl>
+                    <dl miniHide miniLessHide><dt><p>关闭遮罩</p><p>移除背景的浅黑效果</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="backMask" data-Function="onclick='saveSetting();mask()'"></checkBox></dd></dl>
+                    <dl><dt><p>减少动态</p><p>更少的动态效果</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="InvokeByDynamicParameters" data-Function="onclick='saveSetting();ibdp()'"></checkBox></dd></dl>
+                    <dl><dt><p>简洁模式</p><p>关闭背景</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="minimalistLess" data-Function="onclick='saveSetting();checkMinimalistLess();'"></checkBox></dd></dl>
+                    <dl><dt><p>极简模式</p><p>关闭背景等美化选项</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="minimalist" data-Function="onclick='saveSetting();checkMinimalist();'"></checkBox></dd></dl>
+                    <dl miniHide><dt><p>主题颜色</p><p>设置主题颜色偏好</p></dt>
+                        <dd>
+                            <input type="radio" name="color" id="blue-checkcolor" value="blue" onclick="changeThemeColor('blue')" /><label for="blue-checkcolor"></label>
+                            <input type="radio" name="color" id="green-checkcolor" value="green" onclick="changeThemeColor('green')" /><label for="green-checkcolor"></label>
+                            <input type="radio" name="color" id="pink-checkcolor" value="pink" onclick="changeThemeColor('pink')" /><label for="pink-checkcolor"></label>
+                            <input type="radio" name="color" id="orange-checkcolor" value="orange" onclick="changeThemeColor('orange')" /><label for="orange-checkcolor"></label>
+                        </dd>
+                    </dl>
+                    <dl miniHide miniLessHide><dt><p>上传壁纸</p><p>设置本地的图片壁纸</p></dt><dd>
+						<input type="file" id="bgChoose" onchange="imgUPload()" accept="image/*" style="display: none;" title="上传图片" placeholder="" />
+						<button type="submit" class="btn btn-upload corrugation" onclick="$('#bgChoose').click()">浏览</button>
+                    </dd></dl>
+                    <dl miniHide miniLessHide><dt><p>动态视频</p><p>输入动态视频链接</p></dt><dd><input type="text" id="videoBgBox" onkeypress="bwc()" placeholder="输入视频地址"></dd></dl>
+                </div>
+                <div miniHide miniLessHide class="settingMainKixa" id="bgListPhoto" style="display: none;"></div>
+                <div miniHide miniLessHide class="settingMainKixa" id="bgWallHaven" style="display: none;" onscroll="bgWallHavenScroll()"></div>
+                <div miniHide miniLessHide class="settingMainKixa" id="bgListVideo" style="display: none;"></div>
+            </div>
+        </div>
+        <div class="settingFa" style="display:none">
+            <p class="aboutInfo corrugation">在此页面您可以自定义您的搜索方式</p>
+            <div id="menu_list-2" class="menu_list">
+                <div class="settingMainKixa">
+                    <dl><dt><p>自动清空搜索框</p><p>在为聚焦时清空搜索框</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="CleanUpSearchBox" data-Function="onclick='saveSetting();'"></checkBox></dd></dl>
+                    <dl><dt><p>关闭自动跳转</p><p>关闭点击搜索提示关键词自动跳转功能</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="autoLinkGo" data-Function="onclick='saveSetting();'"></checkBox></dd></dl>
+                    <dl><dt><p>自动聚焦</p><p>打开本网站时自动聚焦到搜索框</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="startFocus" data-Function="onclick='saveSetting();'"></checkBox></dd></dl>
+                    <dl><dt><p>搜索引擎</p><p>选择您的默认搜索引擎</p></dt></dl>
+                    <ul id="searchEngineList">
+                        <li><svgCreate-div svgId="4"></svgCreate-div><span><span>Google</span><span>https://www.google.com/search?q=</span></span></li>
+                        <li><svgCreate-div svgId="5"></svgCreate-div><span><span>Bing</span><span>https://cn.bing.com/search?q=</span></span></li>
+                        <li><svgCreate-div svgId="6"></svgCreate-div><span><span>Baidu</span><span>https://www.baidu.com/s?wd=</span></span></li>
+                        <li><svgCreate-div svgId="7"></svgCreate-div><span><span>搜狗</span><span>https://www.sogou.com/web?query=</span></span></li>
+                        <li><svgCreate-div svgId="8"></svgCreate-div><span><span>360</span><span>https://www.so.com/s?q=</span></span></li>
+                        <li><svgCreate-div svgId="9"></svgCreate-div><span><span>F搜</span><span>https://fsoufsou.com/search?q=</span></span></li>
+                        <li><svgCreate-div svgId="6"></svgCreate-div><span><span>百度百科</span><span>https://baike.baidu.com/item/</span></span></li>
+                        <li><svgCreate-div svgId="10"></svgCreate-div><span><span>DuckDuckGo</span><span>https://duckduckgo.com/?q=</span></span></li>
+                        <li not><svgCreate-div svgId="11"></svgCreate-div><input type="text" id="enginTextInput" placeholder="请输入您的地址" value="http://"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="settingFa" style="display:none">
+            <p class="aboutInfo corrugation">在此页面您可以添加您的快捷网站</p>
+            <div class="settingChildKixaChangeList link">
+                <li class="active">常规</li><li onclick="showLinks()">常用网站</li>
+            </div>
+            <div id="menu_list-5" class="menu_list">
+                <div class="settingMainKixa">
+                    <dl><dt><p>纯色背景</p><p>纯色的图标背景</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="previewBackgroundColor" data-Function="onclick='saveSetting();collect_pbc()'"></checkBox></dd></dl>
+                    <span class="linkTextBox">
+                        <li><svgCreate-div svgId="13"></svgCreate-div><input type="text" id="linkTitleTextInput" placeholder="请输入标题"></li>
+                        <li><svgCreate-div svgId="12"></svgCreate-div><input type="text" id="linkUrlTextInput" placeholder="请输入地址" value="http://"></li>
+                        <li no-background no-padding><input type="button" id="overEnterLink" value="确认"><input type="button" value="取消" id="C-Link"></li>
+                        <input type="text" id="copyBox">
+                    </span>
+                    <span class="collect-list"></span>
+                </div>
+                <div class="settingMainKixa" id="linkList" style="display: none;"></div>
+            </div>
+        </div>
+        <div class="settingFa" style="display:none;padding-top:10px">
+            <div class="settingMainKixa" style="height:calc(100% - 20px)">
+                <iframe src="./../tool/memo/" frameborder="0" id="memo_web_content"></iframe>
+            </div>
+        </div>
+        <div class="settingFa" style="display:none">
+            <p class="aboutInfo corrugation">在此页面您可以设置起始页的特殊功能</p>
+            <div class="settingMainKixa">
+                <dl><dt><p>关闭登陆问候</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="loginWelcome" data-Function="onclick='saveSetting();'"></checkBox></dd></dl>
+                <dl><dt><p>详细时间</p><p>在时间下方显示详细时间</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="allTime" data-Function="onclick='saveSetting();allTime()'"></checkBox></dd></dl>
+                <dl><dt><p>名句一言</p><p>首页下方显示文言文或古诗</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="oneWord" data-Function="onclick='saveSetting();oneWord()'"></checkBox></dd></dl>
+                <dl><dt><p>天气预报</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="weather" data-Function="onclick='saveSetting();weather()'"></checkBox></dd></dl>
+            </div>
+        </div>
+        <div class="settingFa" style="display:none">
+            <p class="aboutInfo corrugation">在此页面您可以备份还原数据</p>
+            <p class="aboutInfo corrugation" style="background:#f59f0029;color:#df9000;margin-top:5px;" onclick="loginInCheck()">请登陆您的账号</p>
+            <div class="settingMainKixa" id="accountHtmlBox">
+                <dl class="loginShow"><dt><p>自动导入数据</p><p>自动导入数据</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="autoGetInfor" data-Function="onclick='saveSetting();'"></checkBox></dd></dl>
+                <dl class="loginShow"><dt><p>自动更新数据</p><p>自动更新数据</p></dt><dd><checkBox data-autoCrate="true" data-setting-id="autoUploadInfor" data-Function="onclick='saveSetting();'"></checkBox></dd></dl>
+                <dl><dt><p>导出数据</p></dt>
+                    <dd><button type="submit" class="btn btn-upload corrugation" onclick="exportData()">导出</button></dd>
+                </dl>
+                <dl><dt><p>导入数据</p></dt><dd>
+                    <input type="file" id="importData" onchange="importData(this)" accept=".json" style="display: none;" title="导入"/>
+                    <button type="submit" class="btn btn-upload corrugation" onclick="$('#importData').click()">导入</button>
+                </dd></dl>
+            </div>
+        </div>
+        <div class="settingFa" style="display:none">
+            <p class="aboutInfo corrugation">关于本站的信息</p>
+            <div id="menu_list-3" class="menu_list" data-fullContent>
+                <div class="settingMainKixa"></div>
+            </div>
+        </div>
+        <div class="settingFa" style="display:none">
+            <p class="aboutInfo corrugation">关于本站的友链</p>
+            <div id="menu_list-4" class="menu_list" data-fullContent>
+                <div class="settingMainKixa"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>if ($("svgcreate-div").html() == '') {loadSvg();} </script>
+<script src="https://stear.cn/data/js/xn.js"></script>

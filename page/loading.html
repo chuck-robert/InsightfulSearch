@@ -1,0 +1,24 @@
+<div id="loading">
+    <div id="loading_bg">
+        <div class="loader">Loading...</div>
+    </div>
+</div>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+            loadingFade();
+        }
+    }
+    function loadingFade() {
+        var opacity = 1;
+        var loadingBackground = document.getElementById('loading_bg');
+        var time = setInterval(function () {
+            if (opacity <= 0.4) {
+                clearInterval(time);
+                $('#loading').remove();
+            }
+            loadingBackground.style.opacity = opacity;
+            opacity -= 0.1;
+        }, 100);
+    }
+</script>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>星柠 | 青师</title>
+    <meta name="keywords" content="青师,备忘录,川上星林,Chuck Robert,星柠,Stearsoft,在线,无需登陆">
+    <meta name="description" content="青师是一款备忘录软件，简介便利无需登陆">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stear.cn/data/css/xn-ui.css">
+    <link rel="stylesheet" href="./../../data/css/fonticon.css">
+    <link rel="stylesheet" href="./../../data/css/animate.min.css">
+    <link rel="shortcut icon" href="./../../data/image/icon/logo.v2.ico" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./../../data/css/theme.v1.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+
+<body>
+    <div id="app_memo">
+        <div class="mainBox">
+            <div class="header">
+                <div class="mode_box">
+                    <div class="innerFlexBox">
+                        <img src="img/back_dark.png" alt="返回">
+                        <span>返回</span>
+                    </div>
+                </div>
+                <div class="btn_box">
+                    <button>备忘录</button>
+                </div>
+            </div>
+            <div class="app">
+                <div id="memos_list">
+                    <p class="title">备忘录</p>
+                    <ul id="pre-generated"></ul>
+                    <button class="add corrugation">添加</button>
+                </div>
+                <div id="start_page">
+                    <div class="start_page_box">
+                        <div class="start_page_title">
+                            <xn-h1>青师</xn-h1>
+                            <span>V1.0</span>
+                        </div>
+                        <div class="start_page_tagList" style="height:calc(100% - 20px);overflow:auto;">
+                            <xn-box>
+                                <xn-div class="xn_css base_a tab_4" style="--xn-tab-line-color: #0084ff;">
+                                    <xn-div class="xn_css base_b xn_tab_bar xn_text_ac" for="start_page_memos_view" fade="t">
+                                        <button class="xn_css xn_tab_btn active corrugation">文章</button>
+                                        <button class="xn_css xn_tab_btn corrugation">标签</button>
+                                    </xn-div>
+                                    <xn-div class="xn_css base_b xn_tab" name="start_page_memos_view">
+                                        <xn-div class="xn_css fade in xn_tab_content active" id="sp_memos_list"></xn-div>
+                                        <xn-div class="xn_css fade in xn_tab_content" id="sp_tags_list"></xn-div>
+                                    </xn-div>
+                                </xn-div>
+                            </xn-box>
+                        </div>
+                        <button style="display:none" class="xn_css xn_button_1 btn_default btn-addon">
+                            <i class="fal fa-plus"></i>
+                            <span>添加</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="memo_box" style="display: none">
+                    <div class="editor_box_header">
+                        <input type="text" class="memo_title" placeholder="标题">
+                        <div class="tag_box" style="display: none">
+                            <input type="text" name="" id="tag_add" placeholder="添加标签" maxlength="4">
+                            <button id="tag_add_btn">添加</button>
+                            <div id="tag_list"></div>
+                        </div>
+                        <button class="memo_tag"><img src="./img/tags.png" alt="标签"></button>
+                        <button class="editable" id="editable"><img src="./img/view.png" alt="预览"></button>
+                    </div>
+                    <span class="editor_placeholder">记录生活中的一点一滴</span>
+                    <div class="editor-container" id="editor" contenteditable="true" placeholder="请输入文字"></div>
+                    <div class="commandZone" id="commandZone"></div>
+                </div>
+            </div>
+            <div class="m_footer" style="display:none"></div>
+            <div class="m_memo_list" style="display:none"></div>
+            
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://stear.cn/data/js/jq.js"></script>
+    <script type="text/javascript" src="https://stear.cn/data/js/xn.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="editor.js"></script>
+</body>
+
+</html>
