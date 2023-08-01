@@ -1,0 +1,11 @@
+span.info{
+    padding: 10px;
+    background: #0084ff;
+    color: white;
+    font-weight: 700;
+    min-width: 100px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+}
