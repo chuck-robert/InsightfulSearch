@@ -1,0 +1,75 @@
+{
+    "appDataList":[
+        {
+            "id":1,
+            "t":"赞助",
+            "icon":"https://stear.cn/data/image/icon/logo.v2.ico",
+            "json":[
+                "https://stear.cn/data/image/icon/logo.v2.ico","赞助","color","#fff","WinInsetOffer","url","./../../page/plu/inset-1.html",
+                {
+                    "width":"600px",
+                    "height":"450px",
+                    "fullMode":"full",
+                    "headerInfo": "hide",
+                    "wfullmaxWidthmain":"600px"
+                }
+            ]
+        },{
+            "id":2,
+            "t":"反馈与帮助",
+            "icon":"https://stear.cn/data/image/icon/logo.v2.ico",
+            "json":[
+                "https://stear.cn/data/image/icon/logo.v2.ico","反馈与帮助","color","#fff","appHelpAndOffer","url","./../../page/plu/inset-2.html",
+                {
+                    "width":"600px",
+                    "height":"450px",
+                    "fullMode":"auto",
+                    "headerInfo": "hide",
+                    "wfullmaxWidthmain":"600px"
+                }
+            ]
+        },{
+            "id":3,
+            "t":"城市选择",
+            "icon":"https://stear.cn/data/image/icon/logo.v2.ico",
+            "json":[
+                "https://stear.cn/data/image/icon/logo.v2.ico","城市选择","color","#ffffffd4","WinInsetUpload","url","./../../page/plu/inset-3.html",
+                {
+                    "width":"600px",
+                    "height":"450px",
+                    "fullMode":"full",
+                    "headerInfo": "hide",
+                    "wfullmaxWidthmain":"600px"
+                }
+            ]
+        },{
+            "id":4,
+            "t":"备忘录",
+            "icon":"https://stear.cn/data/image/icon/logo.v2.ico",
+            "json":[
+                "https://stear.cn/data/image/icon/logo.v2.ico","备忘录","color","#fff","AppmemoDataWin","url","./../../page/plu/inset-4.html",
+                {
+                    "width":"600px",
+                    "height":"450px",
+                    "fullMode":"auto",
+                    "headerInfo": "hide",
+                    "wfullmaxWidthmain":"600px"
+                }
+            ]
+        },{
+            "id":5,
+            "t":"超级自定义",
+            "icon":"https://stear.cn/data/image/icon/logo.v2.ico",
+            "json":[
+                "https://stear.cn/data/image/icon/logo.v2.ico","超级自定义","color","#fff","superStyles","url","./../../page/plu/inset-5.html",
+                {
+                    "width":"600px",
+                    "height":"450px",
+                    "fullMode":"auto",
+                    "headerInfo": "hide",
+                    "wfullmaxWidthmain":"600px"
+                }
+            ]
+        }
+    ]
+}

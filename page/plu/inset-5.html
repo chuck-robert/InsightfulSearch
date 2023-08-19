@@ -1,0 +1,123 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<w-main>
+    <w-head>
+        <link rel="stylesheet" href="data/css/xn-ui.css">
+        <style>
+            @media screen and (max-width: 500px) {
+                [data-hkjdasj] {
+                    width: 100% !important;
+                }
+
+                [data-fvdnsabv23] {
+                    display: none !important;
+                }
+            }
+
+            xn-box#___doc_show_box>input {
+                margin: 2px;
+            }
+
+            xn-box#___doc_show_box>input:hover {
+                color: #fff;
+            }
+        </style>
+        <w-title>设置样式</w-title>
+    </w-head>
+    <w-body data-hkjdasj style="padding: 20px;width: 600px;margin: auto;position: absolute;left: 0;right: 0;">
+        <xn-h2 class="xn_css h23_before_bar" style="--xn-tag-h-before-color:#0084ff;">选择自定义的内容</xn-h2>
+        <div>
+            <xn-box style="margin:auto" id="___doc_show_box"></xn-box>
+        </div>
+        <xn-h2 class="xn_css h23_before_bar ___style_setting_box_t"
+            style="--xn-tag-h-before-color:#0084ff;display: none;">超级自定义</xn-h2>
+        <xn-box id="___style_setting_box" style="display: none;">
+            <xn-box>
+                <p class="xn_css p_text none_content ___style_msg text_ti" style="--xn-ti: 1;">注意！这里面的部分选项需要手动输入单位，默认为"px"，若您对前端比较了解，那么可以使用%，em等单位与换算，这里面使用的是CSS3所支持的属性</p>
+                <p class="xn_css p_text none_content ___style_msg text_ti" style="--xn-ti: 1;">括号中的","前为该属性名字，","后为默认单位，若不加单位那么样式更改无效</p>
+                <p class="xn_css p_text none_content ___style_msg text_ti" style="--xn-ti: 1;">关于更多的属性设置，参见 <a href="https://www.runoob.com/cssref/css-reference.html" target="_blank" rel="noopener noreferrer">CSS属性</a>，部分样式在您保存之后若未生效，您可以尝试刷新页面，或者在属性后方加上 <span class="xn_css p_text default_content copy"> !important</span>(点击蓝色字体复制代码)</p>
+            </xn-box>
+            <xn-box>
+                <ol class="xn_css uol_1">
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_font-family-input">元素（若此已由系统生成，便无需再动，除非您学过前端）：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_doc" placeholder="选择器">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_font-family-input">字体(font-family)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_font-family-input" placeholder="字体">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_font-size-input">字体大小(font-size,px)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_font-size-input" placeholder="字体大小">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_font-color-input">字体颜色(color)：</p>
+                        <input type="color" id="___style_sss_font-color-input">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_bg-input">背景(background)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_bg-input">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_border-input">边框(border)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_border-input">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_border-radius">圆角(border-radius,px)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_border-radius">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_box-shadow">阴影(box-shadow)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_box-shadow">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_padding-input">内边距(padding,px)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_padding-input">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_margin-input">外边距(margin,px)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_margin-input">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content">对齐方式(text-align)：</p>
+                        <xn-radiokbox style="--xn-redio-a: #0084ff;--xn-redio-b:#C1C7CD;">
+                            <input type="radio" name="alignment" id="___style_sss_left">
+                            <label for="___style_sss_left"></label>左对齐
+                            <input type="radio" name="alignment" id="___style_sss_center" checked>
+                            <label for="___style_sss_center"></label>居中对齐
+                            <input type="radio" name="alignment" id="___style_sss_right">
+                            <label for="___style_sss_right"></label>右对齐
+                        </xn-radiokbox>
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_width-input">宽度(width,px)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_width-input">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_height-input">高度(height,px)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_height-input">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_position-top-input">上下偏移(transform(translateY),px)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_position-top-input">
+                    </li>
+                    <li class="xn_css">
+                        <p class="xn_css p_text none_content" for="___style_sss_position-left-input">左右偏移(transform(translateX),px)：</p>
+                        <input type="text" class="xn_css input_text" id="___style_sss_position-left-input">
+                    </li>
+                </ol>
+            </xn-box>
+            <input type="submit" value="保存" class="xn_css xn_button_1 btn-default" id="submitBtn"
+                onclick="applyStyles()" style="width: 100px;">
+        </xn-box>
+    </w-body>
+    <script src="./../../data/js/xn-ui.js"></script>
+    <script>
+        var json = printUniqueLeafElementInfoJSON();
+        $("#___doc_show_box").html(``);
+        Object.keys(json).forEach(function (key) {
+            $("#___doc_show_box").append(`<input type="button" k value="${key}" class="xn_css xn_button_1 btn-default">`);
+        });
+        $("#___doc_show_box").prepend(`<input type="button" value="不知道怎么搞？点我选择自定义的内容" class="xn_css xn_button_1 btn-primary">`);
+    </script>
+</w-main>

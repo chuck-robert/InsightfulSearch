@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Luxi Sans", "Segoe UI", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Logo";
+
+
+    /* --c-focus: var(--c-link); */
+
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #e4f2ff, #faf6ff);
+    overflow-y: hidden;
+}
+
+#welcome {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: var(--v1-001-bg);
+    animation: welcomeBox 5s;
+    backdrop-filter: blur(5px);
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcomeBox {
+    0% {
+        display: block;
+        opacity: 1;
+        background: var(--v1-001-bg);
+    }
+
+    60% {
+        opacity: 1;
+        background: var(--v1-001-bg);
+    }
+
+    70% {
+        background: rgba(247, 247, 247, 0);
+    }
+
+    99% {
+        display: block;
+        opacity: 0;
+    }
+
+    to {
+        display: none;
+    }
+}
+
+#welcome>div.logo {
+    --h: 60px;
+    --w: 207px;
+    height: var(--h);
+    width: calc(--w);
+    position: absolute;
+    top: calc(40% - var(--h)/2);
+    left: calc(50% - var(--w)/2);
+    display: flex;
+}
+
+#welcome>div.logo>div.img {
+    height: var(--h);
+    width: var(--h);
+}
+
+#welcome>div.logo>div.img>.san {
+    height: var(--h);
+    width: var(--h);
+    position: absolute;
+}
+
+#welcome>div.logo>div.text {
+    height: var(--h);
+    width: calc(var(--w) - var(--h));
+    font-size: 32px;
+    color: #0084ff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#welcome .san1 {
+    animation: welsan1 1s 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes welsan1 {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+#welcome .san2 {
+    animation: welsan2 1s 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes welsan2 {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+#welcome .text {
+    animation: weltext 1.6s 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes weltext {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    66.66% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+
+div.main {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background: var(--v1-001-bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 50;
+    position: absolute;
+}
+
+header div.logo-box,
+header div.menu-list {
+    height: 100%;
+}
+
+header div.logo-box img {
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 50px;
+}
+
+header div.menu-list {
+    position: relative;
+    right: 30px;
+    display: flex;
+    width: fit-content;
+}
+
+header div.menu-list button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: transparent;
+    transition: all .3s;
+}
+
+header div.menu-list button *,
+header .menu-more * {
+    color: var(--v1-004-font);
+    ;
+}
+
+header div.menu-list button:hover {
+    background: rgba(99, 99, 99, 0.1);
+}
+
+header div.menu-list button i,
+header .menu-more i {
+    margin-right: 10px;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    opacity: .2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+div#app {
+    max-width: 800px;
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    height: calc(100% - 55px);
+    left: calc((100% - 800px)/2);
+}
+
+.input-area {
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    bottom: 20px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    z-index: 10;
+    background: var(--v1-001-bg);
+    width: 800px;
+    transition: all .8s ease-in-out;
+}
+
+.input-area textarea#input {
+    border-radius: 20px;
+    color: var(--v1-004-font);
+    resize: none;
+    height: 40px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    width: calc(100% - 115px);
+    background: transparent;
+}
+
+.input-area button#send {
+    width: 100px;
+    background: var(--c-link);
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 20px;
+    transition: all .3s;
+    height: 40px;
+}
+
+.messages-container {
+    padding: 20px;
+    height: calc(100% - 60px);
+    padding-bottom: 100px;
+    overflow-y: scroll;
+}
+
+#messages {
+    margin-bottom: 100px;
+}
+
+div.message.question {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+div.message.answer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+div.message>div {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 2px 3px 2px #0000002b;
+}
+
+.setting.animate__animated.animate__fadeInDown * {
+    user-select: none;
+}
+
+.message.answer {
+    line-height: 24px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 15px;
+    background-color: var(--c-focus);
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.progress-bar .progress {
+    width: 0;
+    height: 100%;
+    background-color: var(--c-link);
+    position: absolute;
+    border-radius: 10px;
+    max-width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+div.message.question .msg-r {
+    background: linear-gradient(to right, #739dff, #9a5aff);
+    color: #f7f7f7;
+}
+
+div.message.answer .msg-l {
+    text-align: left;
+    background: var(--v1-001-bg);
+    color: var(--v1-004-font);
+}
+
+div.message .msg-time {
+    opacity: .7;
+    font-size: 13px;
+    margin-top: 4px;
+    color: var(--v1-004-font);
+}
+
+
+.message ol,
+.message ul {
+    margin: 10px 0 10px 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.message.answer p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: var(--v1-004-font);
+}
+
+.message a {
+    color: #0ba516;
+    text-decoration: none;
+}
+
+.message a::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: url(./../../../data/image/url.webp);
+    display: inline-block;
+    transform: translateY(5px);
+    margin-right: 5px;
+}
+
+.message a:hover {
+    color: var(--c-link);
+    border-bottom: solid 1px var(--c-link);
+}
+
+.message a:hover::before {
+    background: url(./../../../data/image/url_hover.webp);
+}
+
+.message img {
+    min-width: calc(100% - 40px);
+    min-height: 100px;
+    border-radius: 5px;
+    background: var(--v1-005-bg);
+    margin: 10px;
+    display: inline-block;
+}
+
+.message h1,
+.message h2,
+.message h3 {
+    margin: 15px;
+    color: var(--v1-004-font);
+}
+
+.message code {
+    background: #f1f3f5;
+    margin: 5px;
+    border: 1px solid #c9cbce;
+    border-radius: 4px;
+    padding: 0 3px;
+}
+
+.message pre>code {
+    all: unset;
+}
+
+.message pre {
+    background: #282A36;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.message pre code {
+    color: #F8F8F2;
+    letter-spacing: 2px;
+}
+
+.menu-more {
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 30px;
+}
+
+.about,
+.setting {
+    width: 800px;
+    height: 550px;
+    position: absolute;
+    top: calc(40% - 225px);
+    left: calc(50% - 400px);
+    background: var(--v1-001-bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    overflow-y: auto;
+    padding: 50px;
+    transition: all 1s ease-in-out;
+}
+
+.about * {
+    color: var(--v1-004-font) !important;
+}
+
+.about .aboutHeader,
+.setting .settingHeader {
+    background: var(--v1-005-bg);
+    transform: translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 22px;
+    border-radius: 20px;
+    opacity: .6;
+    color: var(--v1-004-font);
+}
+
+
+dl {
+    padding: 10px;
+    min-height: 60px;
+    margin: 2.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+dt p:nth-child(1) {
+    font-size: 17px;
+    color: var(--v1-004-font);
+}
+
+dt p:nth-child(2) {
+    opacity: .6;
+    color: var(--v1-004-font);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+dd {
+    display: flex;
+    align-items: center;
+}
+
+checkBox {
+    background: var(--v1-005-bg);
+    overflow: hidden;
+    width: 60px;
+    height: 25px;
+    display: block;
+    border-radius: 24px;
+    position: relative;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.checkbox-label {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    left: 2px;
+    background: rgba(255, 255, 255, 0.87);
+}
+
+input[type=checkbox]:checked+label {
+    left: 35px;
+    background: var(--theme-color);
+}
+
+.set.btn {
+    padding: 7px;
+    width: 100px;
+    background: var(--c-link);
+    color: white;
+    border-radius: 5px;
+}
+
+.red {
+    --c-link: #f03e3e;
+}
+
+@media screen and (max-width: 840px) {
+    .input-area {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .about .aboutHeader,
+    .setting .settingHeader {
+        transform: translateY(0);
+    }
+
+    .input-area textarea#input {
+        margin: 5px;
+    }
+
+    .input-area {
+        border-radius: 0;
+        bottom: 0;
+        padding-bottom: 0;
+    }
+
+    div#app {
+        width: 100%;
+        left: 0;
+    }
+
+    .input-area button#send {
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .about,
+    .setting {
+        width: calc(100% - 20px);
+        padding: 10px;
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-more {
+        display: flex !important;
+        background: transparent;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        margin-top: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        background: var(--v1-001-bg);
+        height: fit-content !important;
+        border-radius: 5px;
+        top: 35px;
+        position: absolute !important;
+    }
+
+    .menu-list button {
+        background: var(--v1-001-bg) !important;
+        border-radius: 5px;
+        height: 40px !important;
+        margin: 5px 7.5px;
+    }
+
+    .menu-list button:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+}
+
+.dark>body {
+    background: linear-gradient(to right, #1c242d, #20172b);
+}
+
+.dark .background {
+    opacity: .1;
+}

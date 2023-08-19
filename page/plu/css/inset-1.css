@@ -1,0 +1,12 @@
+w-div-main div span{
+    margin-top: 35px;
+}
+w-div-main div img{
+    width: 250px;
+}
+w-div-main{
+    text-align: center;
+}
+h1,span p{
+    text-align: left;
+}

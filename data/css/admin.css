@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+}
+
+/* 登陆 */
+.loginAdminBox {
+    background: url(./../../admin/adminBG.webp) no-repeat scroll center top/cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+.loginMsgBox p {
+    color: white;
+    margin: 15px;
+}
+
+.loginMsgBox img {
+    border-radius: 100%;
+    --size: 100px;
+    height: var(--size);
+    width: var(--size);
+}
+
+.loginMsgBox #adminPass {
+    padding: 7px;
+    text-align: center;
+    font-size: 15px;
+    --color: rgba(255, 255, 255, 0.75);
+    background: #00000027;
+    color: #fff;
+    border-bottom: 3px solid #0084ff;
+}
+
+.loginMsgBox span {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.loginMsgBox {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.loginMsgBox #adminPass::input-placeholder {
+    color: var(--color);
+}
+
+.loginMsgBox #adminPass::-webkit-input-placeholder {
+    color: var(--color);
+}
+
+.loginMsgBox #adminPass::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: var(--color);
+}
+
+.loginMsgBox #adminPass:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: var(--color);
+}
+
+.loginMsgBox #adminPass:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--color);
+}
+
+/* 添加链接 */
+.linksAddBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./../image/pro/background/out-002.webp) no-repeat scroll center top/cover;
+    background-attachment: fixed;
+}
+
+.linksAddBox .enterBox input[type=text] {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin: 5px;
+    background: #ffffff87;
+    border-radius: 3px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.linksAddBox .enterBox input[type=button] {
+    padding: 10px;
+    width: calc(50% - 20px);
+    margin: 5px;
+    background: #0084ff;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.linksAddBox .LinkBox {
+    width: 200px;
+    height: 300px;
+    background: #ffffff47;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin: 10px;
+}
+
+.linksAddBox img.pre-icon {
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: var(--size);
+}
+
+.linksAddBox .LinkBox p.pre-title {
+    color: white;
+    margin: 10px;
+}
+
+.linksAddBox .LinkBox p.pre-url {
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.linksAddBox .previexBox {
+    display: flex;
+    justify-content: center;
+}
+
+.linksAddBox .enterBoxMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linksAddBox .loadLink {
+    width: 100%;
+    position: absolute;
+    height: calc(100% - 320px);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-content: flex-start;
+}
+.loadLink li {
+    background: #fff;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+}
+.link-pre-icon a img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.link-pre-info .title {
+    font-weight: bold;
+    color: #0084ff;
+    font-size: 22px;
+}
+.link-pre-info .about {
+    color: #00000091;
+    max-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+}
+.loadLink li div.link-pre-info input {
+    background: #ff0000a6;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    width: 75px;
+    transform: translateY(10px);
+}
+@media screen and (max-width : 550px) {
+    .loginMsgBox {
+        margin-top: 150px;
+    }
+}

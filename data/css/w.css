@@ -1,0 +1,65 @@
+#windowsList > div.windowHtml > div.body{
+    overflow: auto;
+}
+#windowsList > div.windowHtml > div.body w-main w-head {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+#windowsList > div.windowHtml > div.body w-main w-head w-title{
+    margin: 10px;
+    opacity: .8;
+}
+#windowsList > div.windowHtml > div.body w-main w-body{
+    overflow: auto;
+}
+w-div-main {
+    padding: 10px;
+    height: calc(100% - 35px);
+    display: block;
+    overflow: auto;
+}
+w-div-main h1 {
+    font-weight: 500;
+    font-family: auto;
+    opacity: .8;
+    font-size: 26px;
+}
+w-div-main p {
+    text-indent: 4ex;
+    opacity: .9;
+}
+div[data-setting-windows-full="full"] w-div-main {
+    width: var(--DSbodyMaxMainWidth);
+    height: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+w-div-main img{
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 5px;
+}
+div#windowsList div.windowHtml[data-swf-auto="full"] div.buttonBox input:nth-child(1) {
+    display: none;
+}
+
+
+
+
+
+
+
+
+.themeColor{
+    color: var(--c-link);
+}
+.hoverUnderLine:hover{
+    text-decoration: underline;
+}

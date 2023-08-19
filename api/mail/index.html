@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html id="html">
+
+<head>
+    <meta charset="utf-8">
+    <title>星柠 | 邮箱</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="description" content="星柠起始页，由川上 星林制作，坚持以效率与美观为本责，给用户以良好的体验。">
+    <link rel="shortcut icon" href="https://stear.cn/ico/logo.v2.ico" type="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <meta name="referrer" content="no-referrer">
+</head>
+
+<body>
+    <header>
+        <a href="//stear.cn"><img src="https://stear.cn/img/logo.png" alt=""></a>
+        <span>
+            <a href="//sw.stear.cn">在线应用</a>
+            <a href="//www.stear.cn">星林の播客</a>
+        </span>
+    </header>
+
+
+    <p class="modelT">邮件</p>
+    <div>
+        <div>
+            <input type="text" placeholder="收件邮箱" autocomplete="off" id="mailTo">
+            <input type="text" placeholder="标题内容" autocomplete="off" id="title">
+            <input type="button" id="send" onclick="sell()" value="发送">
+        </div>
+        <div>
+            <textarea name="contentHtml" id="bodyHtml" cols="30" rows="10"></textarea>
+            <textarea name="contentText" id="bodyText" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+
+
+    <!-- 引入JavaScript -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        function sell() {
+            var mailTo = $("#mailTo").val(),
+                title = $("#title").val(),
+                bodyHtml = $("#bodyHtml").val(),
+                bodyText = $("#bodyText").val();
+            if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            } else {
+                xhr = new ActiveXObject('Microsoft.XMLHTTP');
+            }
+            xhr.onreadystatechange = function (res) {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var back = xhr.responseText
+                    if (back == 'true') {
+                        alert("发送成功！");
+                    } else {
+                        alert("发送失败！");
+                        bodyHtml = back;
+                    }
+                }
+            }
+            xhr.open('POST', 'sell.php', true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.send('mailTo=' + mailTo + '&title=' + title + '&bodyHtml=' + bodyHtml + '&bodyText=' + bodyText);
+        }
+    </script>
+</body>
+
+</html>

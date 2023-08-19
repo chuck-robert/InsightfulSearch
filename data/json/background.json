@@ -1,0 +1,26 @@
+{
+    "srcList":[
+        "|| 必应壁纸",
+        "a| https://stear.cn/api/image/bingWallpaper.php ",
+        "|| 默认壁纸",
+        "0| 1.webp",
+        "0| 2.webp",
+        "0| 3.webp",
+        "0| 4.webp",
+        "0| 5.webp",
+        "0| 6.webp",
+        "|| 动漫风景",
+        "1| 002.webp",
+        "1| 003.webp",
+        "1| 004.webp",
+        "1| 006.webp",
+        "1| 007.webp",
+        "1| 008.webp",
+        "1| 009.webp",
+        "|| 概念壁纸",
+        "1| 001.webp",
+        "1| 005.webp",
+        "|| 二次元壁纸",
+        "1| 010.webp"
+    ]
+}

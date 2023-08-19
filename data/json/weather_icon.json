@@ -1,0 +1,1070 @@
+[
+    {
+        "icon_code": "100",
+        "icon_name": "sunny"
+    },
+    {
+        "icon_code": "100-fill",
+        "icon_name": "sunny-fill"
+    },
+    {
+        "icon_code": "101",
+        "icon_name": "cloudy"
+    },
+    {
+        "icon_code": "101-fill",
+        "icon_name": "cloudy-fill"
+    },
+    {
+        "icon_code": "102",
+        "icon_name": "few-clouds"
+    },
+    {
+        "icon_code": "102-fill",
+        "icon_name": "few-clouds-fill"
+    },
+    {
+        "icon_code": "103",
+        "icon_name": "partly-cloudy"
+    },
+    {
+        "icon_code": "103-fill",
+        "icon_name": "partly-cloudy-fill"
+    },
+    {
+        "icon_code": "104",
+        "icon_name": "overcast"
+    },
+    {
+        "icon_code": "104-fill",
+        "icon_name": "overcast-fill"
+    },
+    {
+        "icon_code": "150",
+        "icon_name": "clear-night"
+    },
+    {
+        "icon_code": "150-fill",
+        "icon_name": "clear-night-fill"
+    },
+    {
+        "icon_code": "151",
+        "icon_name": "cloudy-night"
+    },
+    {
+        "icon_code": "151-fill",
+        "icon_name": "cloudy-night-fill"
+    },
+    {
+        "icon_code": "152",
+        "icon_name": "few-clouds-night"
+    },
+    {
+        "icon_code": "152-fill",
+        "icon_name": "few-clouds-night-fill"
+    },
+    {
+        "icon_code": "153",
+        "icon_name": "partly-cloudy-night"
+    },
+    {
+        "icon_code": "153-fill",
+        "icon_name": "partly-cloudy-night-fill"
+    },
+    {
+        "icon_code": "300",
+        "icon_name": "shower-rain"
+    },
+    {
+        "icon_code": "300-fill",
+        "icon_name": "shower-rain-fill"
+    },
+    {
+        "icon_code": "301",
+        "icon_name": "heavy-shower-rain"
+    },
+    {
+        "icon_code": "301-fill",
+        "icon_name": "heavy-shower-rain-fill"
+    },
+    {
+        "icon_code": "302",
+        "icon_name": "thundershower"
+    },
+    {
+        "icon_code": "302-fill",
+        "icon_name": "thundershower-fill"
+    },
+    {
+        "icon_code": "303",
+        "icon_name": "heavy-thunderstorm"
+    },
+    {
+        "icon_code": "303-fill",
+        "icon_name": "heavy-thunderstorm-fill"
+    },
+    {
+        "icon_code": "304",
+        "icon_name": "thundershower-with-hail"
+    },
+    {
+        "icon_code": "304-fill",
+        "icon_name": "thundershower-with-hail-fill"
+    },
+    {
+        "icon_code": "305",
+        "icon_name": "light-rain"
+    },
+    {
+        "icon_code": "305-fill",
+        "icon_name": "light-rain-fill"
+    },
+    {
+        "icon_code": "306",
+        "icon_name": "moderate-rain"
+    },
+    {
+        "icon_code": "306-fill",
+        "icon_name": "moderate-rain-fill"
+    },
+    {
+        "icon_code": "307",
+        "icon_name": "heavy-rain"
+    },
+    {
+        "icon_code": "307-fill",
+        "icon_name": "heavy-rain-fill"
+    },
+    {
+        "icon_code": "308",
+        "icon_name": "extreme-rain"
+    },
+    {
+        "icon_code": "308-fill",
+        "icon_name": "extreme-rain-fill"
+    },
+    {
+        "icon_code": "309",
+        "icon_name": "drizzle-rain"
+    },
+    {
+        "icon_code": "309-fill",
+        "icon_name": "drizzle-rain-fill"
+    },
+    {
+        "icon_code": "310",
+        "icon_name": "storm"
+    },
+    {
+        "icon_code": "310-fill",
+        "icon_name": "storm-fill"
+    },
+    {
+        "icon_code": "311",
+        "icon_name": "heavy-storm"
+    },
+    {
+        "icon_code": "311-fill",
+        "icon_name": "heavy-storm-fill"
+    },
+    {
+        "icon_code": "312",
+        "icon_name": "severe-storm"
+    },
+    {
+        "icon_code": "312-fill",
+        "icon_name": "severe-storm-fill"
+    },
+    {
+        "icon_code": "313",
+        "icon_name": "freezing-rain"
+    },
+    {
+        "icon_code": "313-fill",
+        "icon_name": "freezing-rain-fill"
+    },
+    {
+        "icon_code": "314",
+        "icon_name": "light-to-moderate-rain"
+    },
+    {
+        "icon_code": "314-fill",
+        "icon_name": "light-to-moderate-rain-fill"
+    },
+    {
+        "icon_code": "315",
+        "icon_name": "moderate-to-heavy-rain"
+    },
+    {
+        "icon_code": "315-fill",
+        "icon_name": "moderate-to-heavy-rain-fill"
+    },
+    {
+        "icon_code": "316",
+        "icon_name": "heavy-rain-to-storm"
+    },
+    {
+        "icon_code": "316-fill",
+        "icon_name": "heavy-rain-to-storm-fill"
+    },
+    {
+        "icon_code": "317",
+        "icon_name": "storm-to-heavy-storm"
+    },
+    {
+        "icon_code": "317-fill",
+        "icon_name": "storm-to-heavy-storm-fill"
+    },
+    {
+        "icon_code": "318",
+        "icon_name": "heavy-to-severe-storm"
+    },
+    {
+        "icon_code": "318-fill",
+        "icon_name": "heavy-to-severe-storm-fill"
+    },
+    {
+        "icon_code": "350",
+        "icon_name": "shower-rain-night"
+    },
+    {
+        "icon_code": "350-fill",
+        "icon_name": "shower-rain-night-fill"
+    },
+    {
+        "icon_code": "351",
+        "icon_name": "heavy-shower-rain-night"
+    },
+    {
+        "icon_code": "351-fill",
+        "icon_name": "heavy-shower-rain-night-fill"
+    },
+    {
+        "icon_code": "399",
+        "icon_name": "rain"
+    },
+    {
+        "icon_code": "399-fill",
+        "icon_name": "rain-fill"
+    },
+    {
+        "icon_code": "400",
+        "icon_name": "light-snow"
+    },
+    {
+        "icon_code": "400-fill",
+        "icon_name": "light-snow-fill"
+    },
+    {
+        "icon_code": "401",
+        "icon_name": "moderate-snow"
+    },
+    {
+        "icon_code": "401-fill",
+        "icon_name": "moderate-snow-fill"
+    },
+    {
+        "icon_code": "402",
+        "icon_name": "heavy-snow"
+    },
+    {
+        "icon_code": "402-fill",
+        "icon_name": "heavy-snow-fill"
+    },
+    {
+        "icon_code": "403",
+        "icon_name": "snowstorm"
+    },
+    {
+        "icon_code": "403-fill",
+        "icon_name": "snowstorm-fill"
+    },
+    {
+        "icon_code": "404",
+        "icon_name": "sleet"
+    },
+    {
+        "icon_code": "404-fill",
+        "icon_name": "sleet-fill"
+    },
+    {
+        "icon_code": "405",
+        "icon_name": "rain-and-snow"
+    },
+    {
+        "icon_code": "405-fill",
+        "icon_name": "rain-and-snow-fill"
+    },
+    {
+        "icon_code": "406",
+        "icon_name": "shower-snow"
+    },
+    {
+        "icon_code": "406-fill",
+        "icon_name": "shower-snow-fill"
+    },
+    {
+        "icon_code": "407",
+        "icon_name": "snow-flurry"
+    },
+    {
+        "icon_code": "407-fill",
+        "icon_name": "snow-flurry-fill"
+    },
+    {
+        "icon_code": "408",
+        "icon_name": "light-to-moderate-snow"
+    },
+    {
+        "icon_code": "408-fill",
+        "icon_name": "light-to-moderate-snow-fill"
+    },
+    {
+        "icon_code": "409",
+        "icon_name": "moderate-to-heavy-snow"
+    },
+    {
+        "icon_code": "409-fill",
+        "icon_name": "moderate-to-heavy-snow-fill"
+    },
+    {
+        "icon_code": "410",
+        "icon_name": "heavy-snow-to-snowstorm"
+    },
+    {
+        "icon_code": "410-fill",
+        "icon_name": "heavy-snow-to-snowstorm-fill"
+    },
+    {
+        "icon_code": "456",
+        "icon_name": "shower-snow-night"
+    },
+    {
+        "icon_code": "456-fill",
+        "icon_name": "shower-snow-night-fill"
+    },
+    {
+        "icon_code": "457",
+        "icon_name": "snow-flurry-night"
+    },
+    {
+        "icon_code": "457-fill",
+        "icon_name": "snow-flurry-night-fill"
+    },
+    {
+        "icon_code": "499",
+        "icon_name": "snow"
+    },
+    {
+        "icon_code": "499-fill",
+        "icon_name": "snow-fill"
+    },
+    {
+        "icon_code": "500",
+        "icon_name": "mist"
+    },
+    {
+        "icon_code": "500-fill",
+        "icon_name": "mist-fill"
+    },
+    {
+        "icon_code": "501",
+        "icon_name": "foggy"
+    },
+    {
+        "icon_code": "501-fill",
+        "icon_name": "foggy-fill"
+    },
+    {
+        "icon_code": "502",
+        "icon_name": "haze"
+    },
+    {
+        "icon_code": "502-fill",
+        "icon_name": "haze-fill"
+    },
+    {
+        "icon_code": "503",
+        "icon_name": "sand"
+    },
+    {
+        "icon_code": "503-fill",
+        "icon_name": "sand-fill"
+    },
+    {
+        "icon_code": "504",
+        "icon_name": "dust"
+    },
+    {
+        "icon_code": "504-fill",
+        "icon_name": "dust-fill"
+    },
+    {
+        "icon_code": "507",
+        "icon_name": "duststorm"
+    },
+    {
+        "icon_code": "507-fill",
+        "icon_name": "duststorm-fill"
+    },
+    {
+        "icon_code": "508",
+        "icon_name": "sandstorm"
+    },
+    {
+        "icon_code": "508-fill",
+        "icon_name": "sandstorm-fill"
+    },
+    {
+        "icon_code": "509",
+        "icon_name": "dense-fog"
+    },
+    {
+        "icon_code": "509-fill",
+        "icon_name": "dense-fog-fill"
+    },
+    {
+        "icon_code": "510",
+        "icon_name": "strong-fog"
+    },
+    {
+        "icon_code": "510-fill",
+        "icon_name": "strong-fog-fill"
+    },
+    {
+        "icon_code": "511",
+        "icon_name": "moderate-haze"
+    },
+    {
+        "icon_code": "511-fill",
+        "icon_name": "moderate-haze-fill"
+    },
+    {
+        "icon_code": "512",
+        "icon_name": "heavy-haze"
+    },
+    {
+        "icon_code": "512-fill",
+        "icon_name": "heavy-haze-fill"
+    },
+    {
+        "icon_code": "513",
+        "icon_name": "severe-haze"
+    },
+    {
+        "icon_code": "513-fill",
+        "icon_name": "severe-haze-fill"
+    },
+    {
+        "icon_code": "514",
+        "icon_name": "heavy-fog"
+    },
+    {
+        "icon_code": "514-fill",
+        "icon_name": "heavy-fog-fill"
+    },
+    {
+        "icon_code": "515",
+        "icon_name": "extra-heavy-fog"
+    },
+    {
+        "icon_code": "515-fill",
+        "icon_name": "extra-heavy-fog-fill"
+    },
+    {
+        "icon_code": "800",
+        "icon_name": "new-moon"
+    },
+    {
+        "icon_code": "801",
+        "icon_name": "waxing-crescent"
+    },
+    {
+        "icon_code": "802",
+        "icon_name": "first-quarter"
+    },
+    {
+        "icon_code": "803",
+        "icon_name": "waxing-gibbous"
+    },
+    {
+        "icon_code": "804",
+        "icon_name": "full-moon"
+    },
+    {
+        "icon_code": "805",
+        "icon_name": "waning-gibbous"
+    },
+    {
+        "icon_code": "806",
+        "icon_name": "last-quarter"
+    },
+    {
+        "icon_code": "807",
+        "icon_name": "waning-crescent"
+    },
+    {
+        "icon_code": "900",
+        "icon_name": "hot"
+    },
+    {
+        "icon_code": "900-fill",
+        "icon_name": "hot-fill"
+    },
+    {
+        "icon_code": "901",
+        "icon_name": "cold"
+    },
+    {
+        "icon_code": "901-fill",
+        "icon_name": "cold-fill"
+    },
+    {
+        "icon_code": "999",
+        "icon_name": "unknown"
+    },
+    {
+        "icon_code": "999-fill",
+        "icon_name": "unknown-fill"
+    },
+    {
+        "icon_code": "1001",
+        "icon_name": "typhoon"
+    },
+    {
+        "icon_code": "1002",
+        "icon_name": "tornado"
+    },
+    {
+        "icon_code": "1003",
+        "icon_name": "rainstorm"
+    },
+    {
+        "icon_code": "1004",
+        "icon_name": "snow-storm"
+    },
+    {
+        "icon_code": "1005",
+        "icon_name": "cold-wave"
+    },
+    {
+        "icon_code": "1006",
+        "icon_name": "gale"
+    },
+    {
+        "icon_code": "1007",
+        "icon_name": "sandstorm-warning"
+    },
+    {
+        "icon_code": "1008",
+        "icon_name": "low-temperature-freeze"
+    },
+    {
+        "icon_code": "1009",
+        "icon_name": "high-temperature"
+    },
+    {
+        "icon_code": "1010",
+        "icon_name": "heat-wave"
+    },
+    {
+        "icon_code": "1011",
+        "icon_name": "dry-hot-wind"
+    },
+    {
+        "icon_code": "1012",
+        "icon_name": "downburst"
+    },
+    {
+        "icon_code": "1013",
+        "icon_name": "avalanche"
+    },
+    {
+        "icon_code": "1014",
+        "icon_name": "lightning"
+    },
+    {
+        "icon_code": "1015",
+        "icon_name": "hail"
+    },
+    {
+        "icon_code": "1016",
+        "icon_name": "frost"
+    },
+    {
+        "icon_code": "1017",
+        "icon_name": "heavy-fog-warning"
+    },
+    {
+        "icon_code": "1018",
+        "icon_name": "low-level-wind-shearl"
+    },
+    {
+        "icon_code": "1019",
+        "icon_name": "haze-warning"
+    },
+    {
+        "icon_code": "1020",
+        "icon_name": "thunder-gust"
+    },
+    {
+        "icon_code": "1021",
+        "icon_name": "road-icing"
+    },
+    {
+        "icon_code": "1022",
+        "icon_name": "drought"
+    },
+    {
+        "icon_code": "1023",
+        "icon_name": "gale-at-sea"
+    },
+    {
+        "icon_code": "1024",
+        "icon_name": "heat-stroke"
+    },
+    {
+        "icon_code": "1025",
+        "icon_name": "wildfire"
+    },
+    {
+        "icon_code": "1026",
+        "icon_name": "grassland-fire"
+    },
+    {
+        "icon_code": "1027",
+        "icon_name": "freeze"
+    },
+    {
+        "icon_code": "1028",
+        "icon_name": "space-weather"
+    },
+    {
+        "icon_code": "1029",
+        "icon_name": "heavy-air-pollution"
+    },
+    {
+        "icon_code": "1030",
+        "icon_name": "low-temperature-rain-and-snow"
+    },
+    {
+        "icon_code": "1031",
+        "icon_name": "strong-convection"
+    },
+    {
+        "icon_code": "1032",
+        "icon_name": "ozone"
+    },
+    {
+        "icon_code": "1033",
+        "icon_name": "heavy-snow-warning"
+    },
+    {
+        "icon_code": "1034",
+        "icon_name": "cold-warning"
+    },
+    {
+        "icon_code": "1035",
+        "icon_name": "continuous-rain"
+    },
+    {
+        "icon_code": "1036",
+        "icon_name": "waterlogging"
+    },
+    {
+        "icon_code": "1037",
+        "icon_name": "geological-hazard"
+    },
+    {
+        "icon_code": "1038",
+        "icon_name": "heavy-rainfall"
+    },
+    {
+        "icon_code": "1039",
+        "icon_name": "severely-falling-temperature"
+    },
+    {
+        "icon_code": "1040",
+        "icon_name": "snow-disaster"
+    },
+    {
+        "icon_code": "1041",
+        "icon_name": "wildfire-grassland"
+    },
+    {
+        "icon_code": "1042",
+        "icon_name": "medical-meteorology"
+    },
+    {
+        "icon_code": "1043",
+        "icon_name": "thunderstorm"
+    },
+    {
+        "icon_code": "1044",
+        "icon_name": "school-closure"
+    },
+    {
+        "icon_code": "1045",
+        "icon_name": "factory-closure"
+    },
+    {
+        "icon_code": "1046",
+        "icon_name": "maritime-risk"
+    },
+    {
+        "icon_code": "1047",
+        "icon_name": "spring-dust"
+    },
+    {
+        "icon_code": "1048",
+        "icon_name": "falling-temperature"
+    },
+    {
+        "icon_code": "1049",
+        "icon_name": "typhoon-and-rainstorm"
+    },
+    {
+        "icon_code": "1050",
+        "icon_name": "severe-cold"
+    },
+    {
+        "icon_code": "1051",
+        "icon_name": "sand-dust"
+    },
+    {
+        "icon_code": "1052",
+        "icon_name": "sea-thunderstorms"
+    },
+    {
+        "icon_code": "1053",
+        "icon_name": "sea-fog"
+    },
+    {
+        "icon_code": "1054",
+        "icon_name": "sea-thunder"
+    },
+    {
+        "icon_code": "1055",
+        "icon_name": "sea-typhoon"
+    },
+    {
+        "icon_code": "1056",
+        "icon_name": "low-temperature"
+    },
+    {
+        "icon_code": "1057",
+        "icon_name": "road-ice-and-snow"
+    },
+    {
+        "icon_code": "1058",
+        "icon_name": "thunderstorm-and-gale"
+    },
+    {
+        "icon_code": "1059",
+        "icon_name": "continuous-low-temperature"
+    },
+    {
+        "icon_code": "1060",
+        "icon_name": "low-visibility"
+    },
+    {
+        "icon_code": "1061",
+        "icon_name": "strong-dust"
+    },
+    {
+        "icon_code": "1062",
+        "icon_name": "gale-in-sea-area"
+    },
+    {
+        "icon_code": "1063",
+        "icon_name": "short-duration-heavy-shower-rain"
+    },
+    {
+        "icon_code": "1064",
+        "icon_name": "short-lived-heavy-shower-rain"
+    },
+    {
+        "icon_code": "1065",
+        "icon_name": "sea-area-fog"
+    },
+    {
+        "icon_code": "1066",
+        "icon_name": "heat-stroke-conditions"
+    },
+    {
+        "icon_code": "1067",
+        "icon_name": "heavy-pollution-weather"
+    },
+    {
+        "icon_code": "1068",
+        "icon_name": "co-poisoning-weather-conditions"
+    },
+    {
+        "icon_code": "1069",
+        "icon_name": "respiratory-disease-weather-wonditions"
+    },
+    {
+        "icon_code": "1071",
+        "icon_name": "intestinal-disease-weather-wonditions"
+    },
+    {
+        "icon_code": "1072",
+        "icon_name": "cardiovascular-disease-weather-wonditions"
+    },
+    {
+        "icon_code": "1073",
+        "icon_name": "flooding-weather-risk"
+    },
+    {
+        "icon_code": "1074",
+        "icon_name": "heavy-pollution-weather-conditions"
+    },
+    {
+        "icon_code": "1075",
+        "icon_name": "urban-flooding-weather-risk"
+    },
+    {
+        "icon_code": "1076",
+        "icon_name": "flooding-weather-risk-2"
+    },
+    {
+        "icon_code": "1077",
+        "icon_name": "wildfire-weather-risk"
+    },
+    {
+        "icon_code": "1078",
+        "icon_name": "meteorological-drought"
+    },
+    {
+        "icon_code": "1079",
+        "icon_name": "agricultural-weather-risk"
+    },
+    {
+        "icon_code": "1080",
+        "icon_name": "strong-monsoon"
+    },
+    {
+        "icon_code": "1081",
+        "icon_name": "ice-accretion-on-wire"
+    },
+    {
+        "icon_code": "1082",
+        "icon_name": "stroke-weather-risk"
+    },
+    {
+        "icon_code": "1084",
+        "icon_name": "wildfire-grassland-risk"
+    },
+    {
+        "icon_code": "1085",
+        "icon_name": "thunderstorm-and-strong-winds"
+    },
+    {
+        "icon_code": "1086",
+        "icon_name": "low-temperature-freeze"
+    },
+    {
+        "icon_code": "1087",
+        "icon_name": "low-temperature-damage"
+    },
+    {
+        "icon_code": "1088",
+        "icon_name": "national-agricultural-meteorological-risk"
+    },
+    {
+        "icon_code": "1089",
+        "icon_name": "dry-hot-wind-risk-for-winter-wheat"
+    },
+    {
+        "icon_code": "1101",
+        "icon_name": "flood"
+    },
+    {
+        "icon_code": "1302",
+        "icon_name": "mudflow"
+    },
+    {
+        "icon_code": "1402",
+        "icon_name": "storm-surge"
+    },
+    {
+        "icon_code": "1601",
+        "icon_name": "very-hot-weather"
+    },
+    {
+        "icon_code": "1602",
+        "icon_name": "strong-monsoon-signal"
+    },
+    {
+        "icon_code": "1603",
+        "icon_name": "landslip"
+    },
+    {
+        "icon_code": "1604",
+        "icon_name": "tropical-cyclone"
+    },
+    {
+        "icon_code": "1605",
+        "icon_name": "fire-danger"
+    },
+    {
+        "icon_code": "1606",
+        "icon_name": "flooding-in-the-northern-new-territories"
+    },
+    {
+        "icon_code": "1607",
+        "icon_name": "cold-weather"
+    },
+    {
+        "icon_code": "1701",
+        "icon_name": "cold-surge-advisory"
+    },
+    {
+        "icon_code": "1702",
+        "icon_name": "strong-wind-advisory"
+    },
+    {
+        "icon_code": "1703",
+        "icon_name": "rainfall-advisory"
+    },
+    {
+        "icon_code": "2001",
+        "icon_name": "wind-warning"
+    },
+    {
+        "icon_code": "2002",
+        "icon_name": "snow-ice"
+    },
+    {
+        "icon_code": "2003",
+        "icon_name": "fog"
+    },
+    {
+        "icon_code": "2004",
+        "icon_name": "coastal-event"
+    },
+    {
+        "icon_code": "2005",
+        "icon_name": "forest-fire"
+    },
+    {
+        "icon_code": "2006",
+        "icon_name": "rain-warning"
+    },
+    {
+        "icon_code": "2007",
+        "icon_name": "rain-flood"
+    },
+    {
+        "icon_code": "2008",
+        "icon_name": "freezing-rain-icing"
+    },
+    {
+        "icon_code": "2009",
+        "icon_name": "ground-frost"
+    },
+    {
+        "icon_code": "2010",
+        "icon_name": "dust-raising-winds"
+    },
+    {
+        "icon_code": "2011",
+        "icon_name": "strong-surface-winds"
+    },
+    {
+        "icon_code": "2012",
+        "icon_name": "hot-day"
+    },
+    {
+        "icon_code": "2013",
+        "icon_name": "warm-night"
+    },
+    {
+        "icon_code": "2014",
+        "icon_name": "cold-day"
+    },
+    {
+        "icon_code": "2015",
+        "icon_name": "thunderstorm-and-lightning"
+    },
+    {
+        "icon_code": "2016",
+        "icon_name": "hailstorm"
+    },
+    {
+        "icon_code": "2017",
+        "icon_name": "sea-area-warning"
+    },
+    {
+        "icon_code": "2018",
+        "icon_name": "fishermen-warning"
+    },
+    {
+        "icon_code": "2019",
+        "icon_name": "low-humidity"
+    },
+    {
+        "icon_code": "2020",
+        "icon_name": "accumulated-rain"
+    },
+    {
+        "icon_code": "2021",
+        "icon_name": "hazardous-surf-warning"
+    },
+    {
+        "icon_code": "2022",
+        "icon_name": "marine-wind-warning"
+    },
+    {
+        "icon_code": "2023",
+        "icon_name": "road-weather-alert"
+    },
+    {
+        "icon_code": "2024",
+        "icon_name": "thunder-rain"
+    },
+    {
+        "icon_code": "2025",
+        "icon_name": "thunder-rain-and-fog"
+    },
+    {
+        "icon_code": "2026",
+        "icon_name": "damaging-winds"
+    },
+    {
+        "icon_code": "2027",
+        "icon_name": "veld-fire-conditions"
+    },
+    {
+        "icon_code": "2028",
+        "icon_name": "weather-advisory"
+    },
+    {
+        "icon_code": "2052",
+        "icon_name": "snow-warning"
+    },
+    {
+        "icon_code": "2053",
+        "icon_name": "zonda-wind"
+    },
+    {
+        "icon_code": "2054",
+        "icon_name": "storm"
+    },
+    {
+        "icon_code": "9998",
+        "icon_name": "severe-weather-warning"
+    },
+    {
+        "icon_code": "9999",
+        "icon_name": "warning-default"
+    },
+    {
+        "icon_code": "qweather",
+        "icon_name": "qweather"
+    },
+    {
+        "icon_code": "qweather-fill",
+        "icon_name": "qweather-fill"
+    }
+]

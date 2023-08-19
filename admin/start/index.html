@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>聚源千意 | 配置页面</title>
+        <link rel="stylesheet" href="./../../data/css/xn-ui.css">
+        <link rel="shortcut icon" href="./../../data/image/icon/logo.v2.ico" type="image/x-icon">
+        <style>
+            * {
+                outline: 0;
+                border: 0;
+                box-sizing: border-box;
+            }
+
+            input[type='text'] {
+                width: 400px;
+            }
+            xn-box.main{
+                width: 60%;
+                position: absolute;
+                left: 20%;
+            }
+            @media screen and (max-width:820px) {
+                xn-box.main{
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <xn-box class="main">
+            <xn-h2 class="xn_css h23_before_bar" style="--xn-tag-h-before-color:#0084ff;">聚源千意 | 配置页面</xn-h2>
+            <xn-box>
+
+                <form method="post" action="save_config.php" id="configForm">
+                    <ol class="xn_css uol_1">
+                        <li>
+                            <p class="xn_css p_text none_content">本地服务器地址</p>
+                            <input type="text" class="xn_css input_text" placeholder="localhost" name="server_localhost">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">数据库用户名</p>
+                            <input type="text" class="xn_css input_text" placeholder="root" name="server_user">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">数据库密码</p>
+                            <input type="text" class="xn_css input_text" placeholder="root" name="server_pwd">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">数据库名</p>
+                            <input type="text" class="xn_css input_text" placeholder="db" name="server_db">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">Wallhaven API 密钥</p>
+                            <input type="text" class="xn_css input_text" placeholder="KEY" name="wallhaven_api">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">SMTP 服务器主机</p>
+                            <input type="text" class="xn_css input_text" placeholder="smtp.qq.com" name="mail_host">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">SMTP 用户名</p>
+                            <input type="text" class="xn_css input_text" placeholder="...@qq.com" name="mail_user">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">SMTP 密码</p>
+                            <input type="text" class="xn_css input_text" placeholder="密码" name="mail_pwd">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">SMTP 加密方式</p>
+                            <input type="text" class="xn_css input_text" placeholder="ssl" name="mail_SMTPSecure">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">SMTP 服务器端口</p>
+                            <input type="text" class="xn_css input_text" placeholder="465" name="mail_port">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">发件人邮箱地址</p>
+                            <input type="text" class="xn_css input_text" placeholder="..@qq.com" name="mail_from_mail">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">发件人姓名</p>
+                            <input type="text" class="xn_css input_text" placeholder="Stearsoft | 官方" name="mail_from_person">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">收件人邮箱地址</p>
+                            <input type="text" class="xn_css input_text" placeholder="...@qq.com" name="mail_get_mail">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">收件人姓名</p>
+                            <input type="text" class="xn_css input_text" placeholder="自己" name="mail_get_person">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">网站所有者邮箱地址</p>
+                            <input type="text" class="xn_css input_text" placeholder="...@qq.com" name="mail_websiteOwner_mail">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">ChatGPT 的 API 访问令牌</p>
+                            <input type="text" class="xn_css input_text" placeholder="sk-..." name="chatGPT_token">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">管理员登陆密码</p>
+                            <input type="text" class="xn_css input_text" placeholder="123456" name="admin_pwd">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">管理员登陆密码唯一密钥</p>
+                            <input type="text" class="xn_css input_text" placeholder="dsfkjebjhhdfgchdsuyt12yt3fhgd13t487tfhgsd" name="admin_key">
+                        </li>
+                        <li>
+                            <p class="xn_css p_text none_content">允许访问该 PHP 文件的域名列表</p>
+                            <textarea name="allowedDomainsList" cols="50" rows="5" class="xn_css textarea" placeholder="请输入域名"></textarea>
+                        </li>
+                    </ol>
+                    <input type="submit" value="保存" class="xn_css xn_button_1 btn-default" id="submitBtn">
+                </form>
+            </xn-box>
+        </xn-box>
+        <script src="https://stear.cn/data/js/jq.js"></script>
+        <script src="https://stear.cn/data/js/xn.js"></script>
+        <script>
+            $(document).ready(function() {
+        $("#submitBtn").click(function(event) {
+            let isValid = true;
+
+            let inputs = $("input[type='text']");
+            inputs.each(function() {
+                if ($(this).val().trim() === '') {
+                    isValid = false;
+                    $(this).attr("class","xn_css faild_content xn_input_1");
+                } else {
+                    $(this).attr("class","xn_css input_text");
+                }
+            });
+
+            if (!isValid) {
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    });
+        </script>
+    </body>
+
+</html>

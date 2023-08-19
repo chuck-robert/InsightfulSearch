@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    user-select: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../image/pageBackground.webp) no-repeat center;
+    background-attachment: local;
+}
+
+main {
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    padding-top: 100px;
+    height: 100%;
+    overflow: auto;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.856);
+    font-weight: 400;
+    font-size: 30px;
+    margin: 10px;
+}
+
+p {
+    text-indent: 3vh;
+    color: rgba(0, 0, 0, 0.856);
+    line-height: 25px;
+}
+
+ul li {
+    display: inline-flex;
+    border-radius: 7px;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+    padding: 15px 20px;
+}
+
+ul li div img {
+    height: 40px;
+    width: 40px;
+}
+
+ul li div p:nth-child(1) {
+    font-weight: bold;
+    color: #0084ff;
+    font-size: 20px;
+}
+
+ul li div p:nth-child(2) {
+    color: rgba(0, 0, 0, 0.863);
+}
+
+ul li:hover {
+    background: #ffffff80;
+    box-shadow: 0 0 10px #ffffff9c;
+}
+
+main div.a {
+    padding: 28px;
+    border-bottom: 1px solid #0003;
+}
+
+div.b h1{
+    color: #0084ff;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 90%;
+        left: 5%;
+    }
+}
+@media screen and (max-width: 800px) {
+    main {
+        width: 100%;
+        padding-top: 0;
+        left: 0;
+    }
+}
