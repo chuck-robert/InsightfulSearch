@@ -15,3 +15,10 @@
 ## 视频的配置
 
 [点击观看教程视频](https://www.bilibili.com/video/BV1Tu4y1m7Uy)
+
+## 相关信息
+
+- 作者: 川上星林
+- 版本：2.0
+- 使用框架：jq
+- UI框架：xn-ui
